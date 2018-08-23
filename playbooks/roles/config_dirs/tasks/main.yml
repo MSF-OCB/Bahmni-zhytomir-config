@@ -2,7 +2,7 @@
 
 - name: Link the implementation_config directory
   file:
-    src: bahmni_config/implementation_config
+    src: /var/www/bahmni_config/implementation_config
     dest: /var/www/implementation_config
     state: link
 
