@@ -1,0 +1,19 @@
+---
+
+- name: Link the implementation_config directory
+  file:
+    src: bahmni_config/implementation_config
+    dest: /var/www/implementation_config
+    state: link
+
+- name: Delete the old /opt/bahmni-web/etc/bahmni_config directory
+  file:
+    path: /opt/bahmni-web/etc/bahmni_config
+    state: absent
+
+- name: Link the /opt/bahmni-web/etc/bahmni_config directory
+  file:
+    src: /var/www/bahmni_config
+    dest: /opt/bahmni-web/etc/bahmni_config
+    state: link
+

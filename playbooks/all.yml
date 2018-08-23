@@ -1,6 +1,8 @@
 - hosts: bahmni-emr
   sudo: yes
   roles:
-    - { role: bahmni-endtb-batch }
+    - bahmni-endtb-batch
+    - config_dirs
   tags:
     - bahmni-emr-customization
+
