@@ -3,6 +3,7 @@
   roles:
     - bahmni-endtb-batch
     - config_dirs
+    - translations
   tags:
     - bahmni-emr-customization
 

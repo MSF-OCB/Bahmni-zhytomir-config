@@ -1,0 +1,13 @@
+---
+
+- name: Copy Russian translation files into bahmniapps
+  copy:
+    src: "bahmniapps_locale_ru/{{ item }}/locale_ru.json"
+    dest: "/opt/bahmni-web/etc/bahmniapps/i18n/{{ item }}/locale_ru.json"
+    owner: bahmni
+    group: bahmni
+  with_items:
+    - clinical
+    - home
+    - registration
+
