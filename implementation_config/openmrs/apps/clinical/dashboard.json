@@ -163,7 +163,8 @@
         },
         "formGroup": [
           "Outcome End of Treatment Template",
-          "6 month Post Treatment Outcome Template"
+          "6 month Post Treatment Outcome Template",
+          "12 month Post Treatment Outcome Template"
         ],
         "translationKey": "DASHBOARD_TITLE_OUTCOME_FORMS"
       }
@@ -310,7 +311,7 @@
             "Bacteriology, Clofazamine result",
             "Bacteriology, Cycloserine result",
 	    "Bacteriology, Bedaquiline result",
-            "Bacteriology, Delamanid result"    
+            "Bacteriology, Delamanid result"
           ]
         }
       },
@@ -350,10 +351,10 @@
             "Bacteriology, Fluoroquinolone",
             "Bacteriology, MTBDRsl injectable",
 	    "Bacteriology, KatG mutation present",
-	    "Bacteriology, InhA mutation present"            
+	    "Bacteriology, InhA mutation present"
           ]
         }
-      },   
+      },
       "dstWithMIC": {
         "translationKey": "SUMMARY_TITLE_DST_WITH_MIC",
         "type": "obsToObsFlowSheet",
@@ -716,7 +717,7 @@
             "Audiometry, Right ear at 1000Hz",
             "Audiometry, Right ear at 2000Hz",
             "Audiometry, Right ear at 4000Hz",
-            "Audiometry, Right ear at 8000Hz"            
+            "Audiometry, Right ear at 8000Hz"
           ]
         }
       },
@@ -738,7 +739,7 @@
             "Baseline, Ankle reflexes in left"
           ]
         }
-      },   
+      },
       "BaselineBPNSDisplayright": {
         "translationKey": "SUMMARY_TITLE_BASELINE_BPNS_RIGHT",
         "type": "obsToObsFlowSheet",
@@ -795,7 +796,7 @@
             "Followup, Ankle reflexes in right"
           ]
         }
-      },      
+      },
       "FollowupAcuityDisplay": {
         "translationKey": "SUMMARY_TITLE_FOLLOWUP_ACUITY",
         "type": "obsToObsFlowSheet",
@@ -808,7 +809,7 @@
           "templateName": "Followup Template",
           "conceptNames": [
             "Visual acuity, left eye",
-            "Visual acuity, right eye"            
+            "Visual acuity, right eye"
           ]
         }
       },
@@ -824,7 +825,7 @@
           "templateName": "Baseline, Clinical Examination",
           "conceptNames": [
             "Visual acuity, left eye",
-            "Visual acuity, right eye"            
+            "Visual acuity, right eye"
           ]
         }
       },
@@ -840,7 +841,7 @@
           "templateName": "Baseline, Clinical Examination",
           "conceptNames": [
             "Baseline, Left Eye Correct Plates",
-            "Baseline, Right Eye Correct Plates"            
+            "Baseline, Right Eye Correct Plates"
           ]
         }
       },
@@ -856,7 +857,7 @@
           "templateName": "Followup Template",
           "conceptNames": [
             "Followup, Left Eye Correct Plates",
-            "Followup, Right Eye Correct Plates"            
+            "Followup, Right Eye Correct Plates"
           ]
         }
       }

@@ -38,8 +38,7 @@
     "patientContext": {
       "programAttributes": [
         "Registration Number",
-        "Registration Facility",
-	"Registration Date"
+        "Registration Facility"
       ],
       "preferredIdentifier": "Registration Number"
     },
@@ -756,12 +755,6 @@
       "Lab, TSH": {
         "isTabular": true
       },
-      "Lab, Amylase": {
-        "isTabular": true
-      },
-	"Lab, Serum Calcium": {
-        "isTabular": true
-      },
       "Lab, Lipase": {
         "isTabular": true
       },
@@ -845,7 +838,7 @@
       },
       "Lab, CD4 count other result": {
 	    "disableAddNotes": true
-      }, 
+      },
       "HIV VIRAL LOAD": {
         "disableAddNotes": true
       },
@@ -941,7 +934,26 @@
       },
       "Documents, Image": {
         "required": true
-      }
+      },
+      "12m PTO, 12 month post treatment Outcome" : {
+        "required": true
+      },
+      "Baseline, Last DSTB treatment registration facility" : {
+        "dropdown": true
+      },
+      "Baseline, Last DRTB treatment registration facility" : {
+	"dropdown": true
+	},
+      "Treatment Facility Name" : {
+	"dropdown": true
+	},
+      "TI, Treatment facility at start" : {
+	"dropdown": true
+	},
+      "HDS, Hospital name" : {
+        "dropdown": true
+        }
+
     }
   }
 }

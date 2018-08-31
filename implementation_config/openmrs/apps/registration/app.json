@@ -18,49 +18,45 @@
         "activeVisitUuid"
     ],
     "config": {
-	"patientInformation": {
-        "additionalPatientInformation": {
-            "title": "Contact Information",
-            "attributes": [
+        "patientInformation": {
+            "additionalPatientInformation": {
+                "title": "Additional Patient Information",
+                "attributes": [
+                ]
+            },
+            "patientContactDetails" : {
+                "title" : "Patient Contact Details",
+                "attributes" : [
+                  "patientAddress",
+                  "patientAddressLine2",
+                  "patientDistrict",
+                  "patientCountry",
+                  "telephoneNumber"
+                ]
+            },
+            "hidden": {
+                "attributes": [
+                ]
+            },
+            "defaults":  {
+            }
+        },
+        "addressHierarchy": {
+            "showAddressFieldsTopDown": true,
+            "freeTextAddressFields": [
+                "address2",
+                "address1"
             ]
         },
-        "patientContactDetails" : {
-            "title" : "Patient Contact Details",
-            "attributes" : [
-              "patientAddress",
-              "patientAddressLine2",
-              "patientDistrict",
-	      "Other Mumbai District/Ward Description",
-              "patientCountry",
-              "telephoneNumber",
-	      "Other Contact Name",
-	      "OTHER Contact Phone #",
-	      "Treatment Buddy Name",
-	      "BUDDY Phone #"
-            ]
+        "mandatoryPersonAttributes": [
+            "endtbOutputID","DRTBNationalID","District of Residence","nationalIdentificationNumber"
+        ],
+        "relationshipTypeMap": {
+            "Doctor": "provider",
+            "Parent": "patient"
         },
-        "hidden": {
-            "attributes": [
-            ]
-        },
-        "defaults":  {
-        }
-    },
-    "addressHierarchy": {
-        "showAddressFieldsTopDown": true,
-        "freeTextAddressFields": [
-            "address2",
-            "address1"
-        ]
-    },
-	"mandatoryPersonAttributes": [
-        "endtbOutputID","DRTBNationalID"
-    ],
-    "relationshipTypeMap": {
-        "Doctor": "provider",
-        "Parent": "patient"
-    },
-	"dobMandatory": true,
+        "dobMandatory": true,
+        "showBirthTime": false,
         "defaultIdentifierPrefix": "ARA",
         "defaultVisitType": "General",
         "searchByIdForwardUrl": "/patient/{{patientUuid}}",
@@ -68,11 +64,11 @@
         "fieldValidation": {
             "telephoneNumber": {
             "pattern": "[0-9]{0,20}",
-            "errorMessage": "Should be numeric value"
+            "errorMessage": "Should be numberic value"
             },
             "facilityPatientID": {
                 "pattern": "[0-9]{0,20}",
-                "errorMessage": "Should be numeric value"
+                "errorMessage": "Should be numberic value"
             },
             "endtbOutputID": {
                 "pattern": "[a-zA-Z0-9]{9}",

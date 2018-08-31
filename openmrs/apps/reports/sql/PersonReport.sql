@@ -7,11 +7,10 @@ SELECT
   o.gender AS 'sex',
   GROUP_CONCAT(DISTINCT(IF(pat.name = 'nationalIdentificationNumber', o.attr_value, NULL)) SEPARATOR ',') AS `id_nat`,
   DATE_FORMAT(o.date_created, '%d/%b/%Y') as `creation_date`,
-  GROUP_CONCAT(DISTINCT(IF(pat.name = 'patientAddress',o.attr_value, NULL)) SEPARATOR ',') AS `address_line1`,
-  GROUP_CONCAT(DISTINCT(IF(pat.name = 'patientAddressLine2',o.attr_value, NULL)) SEPARATOR ',') AS `address_line2`,
-  GROUP_CONCAT(DISTINCT(IF(pat.name = 'patientDistrict',o.attr_value, NULL)) SEPARATOR ',') AS `res_district`,
-  GROUP_CONCAT(DISTINCT(IF(pat.name = 'patientCountry',o.attr_value, NULL)) SEPARATOR ',') AS `res_country`,
-  GROUP_CONCAT(DISTINCT(IF(pat.name = 'telephoneNumber', o.attr_value, NULL)) SEPARATOR ',') AS `telephone_number`
+  GROUP_CONCAT(DISTINCT(IF(pat.name = 'Address',o.attr_value, NULL)) SEPARATOR ',') AS `address`,
+  GROUP_CONCAT(DISTINCT(IF(pat.name = 'District of Residence',o.attr_value, NULL)) SEPARATOR ',') AS `res_district`,
+  GROUP_CONCAT(DISTINCT(IF(pat.name = 'Country of residence',o.attr_value, NULL)) SEPARATOR ',') AS `res_country`,
+  GROUP_CONCAT(DISTINCT(IF(pat.name = 'Telephone', o.attr_value, NULL)) SEPARATOR ',') AS `telephone_number`
 FROM
   (SELECT
      pi.identifier,
