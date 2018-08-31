@@ -11,11 +11,3 @@
   file:
     path: /opt/bahmni-web/etc/bahmni_config
     state: absent
-  when: false
-
-- name: Link the /opt/bahmni-web/etc/bahmni_config directory
-  file:
-    src: /var/www/bahmni_config
-    dest: /opt/bahmni-web/etc/bahmni_config
-    state: link
-  when: false
