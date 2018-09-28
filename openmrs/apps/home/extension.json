@@ -48,7 +48,7 @@
         "url": "../../bahmni_config/report.html",
         "icon": "fa-download",
         "order": 6,
-        "requiredPrivilege": "app:reports"
+        "requiredPrivilege": "app:exports"
     },
     "bahmni_dataintegrity": {
         "id": "bahmni.reports",
@@ -58,6 +58,6 @@
         "url": "../clinical/#/dataintegrity/patient/search",
         "icon": "icon-bahmni-data-integrity",
         "order": 7,
-        "requiredPrivilege": "app:reports"
+        "requiredPrivilege": "app:quality"
     }
 }
