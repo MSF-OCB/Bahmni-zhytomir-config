@@ -120,6 +120,7 @@
     "MEDICATION_LABEL_DOSE_UNITS_PLACEHOLDER_TB_TAB": "Выберите Единицу",
     "MEDICATION_LABEL_DOSE_NON_TB_TAB": "Количество",
     "MEDICATION_LABEL_DOSE_UNITS_PLACEHOLDER_NON_TB_TAB": "Выберите Лекарственную Форму",
+    "MEDICATION_LABEL_FREQUENCY": "Частота приема",
     "MEDICATION_LABEL_FREQUENCY_TB_TAB": "График",
     "MEDICATION_LABEL_FREQUENCY_UNIT_TB_TAB": "Выберите График",
     "MEDICATION_LABEL_DOSING_INSTRUCTIONS_NON_TB_TAB": "Причина Назначения",
