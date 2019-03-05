@@ -727,7 +727,7 @@ Bahmni.ConceptSet.FormConditions.rules = {      //This is a constant that Bahmni
         var conceptToEnable = "Other treatment facility name";
         var conditions = {enable: [], disable: []};
         var conditionConcept = formFieldValues['Treatment Facility Name'];
-        if (conditionConcept == "Other") {
+        if (conditionConcept == "Other" || conditionConcept == "Другие") {
             conditions.enable.push(conceptToEnable)
         } else {
             conditions.disable.push(conceptToEnable)
