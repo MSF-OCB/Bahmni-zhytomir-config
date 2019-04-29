@@ -193,9 +193,9 @@ Bahmni.ConceptSet.FormConditions.rules = {      //This is a constant that Bahmni
         };
         var conditionConcept = formFieldValues['Baseline, Has the patient ever been treated for TB in the past?'];
         if (conditionConcept == "True") {
-            conditions.enable.push("Baseline, If Yes, What was the year of the patients start of first TB treatment Details", "Baseline, Treatment for drug-susceptible TB", "Baseline, Treatment for drug-resistant TB");
+            conditions.enable.push("Baseline, If Yes, What was the year of the patients start of first TB treatment Details", "Baseline, Treatment for drug-susceptible TB", "Baseline, Treatment for drug-resistant TB", "Baseline, List of drugs taken for more than a month");
         } else {
-            conditions.disable.push("Baseline, If Yes, What was the year of the patients start of first TB treatment Details", "Baseline, Treatment for drug-susceptible TB", "Baseline, Treatment for drug-resistant TB");
+            conditions.disable.push("Baseline, If Yes, What was the year of the patients start of first TB treatment Details", "Baseline, Treatment for drug-susceptible TB", "Baseline, Treatment for drug-resistant TB", "Baseline, List of drugs taken for more than a month");
         }
         return conditions;
     },
