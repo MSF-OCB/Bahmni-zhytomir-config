@@ -231,7 +231,7 @@ Bahmni.ConceptSet.FormConditions.rules = {      //This is a constant that Bahmni
         if (conditionConcept == false) {
             return {enable: [enReason], disable: [enStartDate, txFacility, txRegimen, firstLine, secondLine]}
         } else if (conditionConcept == true) {
-            return {enable: [enStartDate, txFacility, txRegimen], disable: [enReason, dateOfDeath]}
+            return {enable: [enStartDate, txFacility, txRegimen, firstLine, secondLine], disable: [enReason, dateOfDeath]}
         }
         else {
             return {disable: [enStartDate, txFacility, txRegimen, firstLine, secondLine, enReason, dateOfDeath]}
