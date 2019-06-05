@@ -246,6 +246,14 @@ Bahmni.ConceptSet.FormConditions.rules = {      //This is a constant that Bahmni
             return {enable: [firstLine], disable: [secondLine]}
         } else if (conditionConcept == 'Regimen including 2nd line drugs') {
             return {enable: [secondLine], disable: [firstLine]}
+        } else if (conditionConcept == 'Short Course Regimen') {
+            return {enable: [secondLine], disable: [firstLine]}
+        } else if (conditionConcept == 'Individual Treatment Regimen') {
+            return {enable: [secondLine], disable: [firstLine]}
+        } else if (conditionConcept == 'OR Regimen (Operational Research)') {
+            return {enable: [secondLine], disable: [firstLine]}
+        } else if (conditionConcept == 'Other regimen') {
+            return {enable: [secondLine], disable: [firstLine]}
         } else {
             return {disable: [firstLine, secondLine]}
         }
