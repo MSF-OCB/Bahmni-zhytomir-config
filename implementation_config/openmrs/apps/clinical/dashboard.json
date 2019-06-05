@@ -201,7 +201,7 @@
       },
       "casedefinition": {
         "isObservation": true,
-        "displayType": "Full-Page",
+        "displayType": "LAYOUT_50_50",
         "dashboardConfig": {
           "showGroupDateTime": false,
           "conceptNames": [
@@ -213,6 +213,20 @@
         },
         "displayOrder": 2,
         "translationKey": "SUMMARY_TITLE_CASE_DEFINITION"
+      },
+      "hospitalDischargeInfo": {
+        "isObservation": true,
+        "displayType": "Full-Page",
+        "dashboardConfig": {
+          "showGroupDateTime": false,
+          "conceptNames": [
+            "HDS, Hospital admission date",
+            "HDS, Hospital discharge date",
+            "HDS, Reason for hospitalization"
+          ]
+        },
+        "displayOrder": 2,
+        "translationKey": "SUMMARY_TITLE_HOSPITAL_DISCHARGE_INFO"
       },
       "serologystatus": {
         "isObservation": true,
