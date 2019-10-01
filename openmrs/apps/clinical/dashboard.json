@@ -198,6 +198,21 @@
         "displayOrder": 1,
         "translationKey": "SUMMARY_TITLE_TREATMENT_INFORMATION"
       },
+      "hospitaldischargeinfo": {
+        "isObservation": true,
+        "displayType": "Full-Page",
+        "dashboardConfig": {
+          "showGroupDateTime": false,
+          "conceptNames": [
+            "HDS, Hospital admission date",
+            "HDS, Hospital discharge date",
+            "HDS, Reason for hospitalization",
+            "HDS, Other reason for hospitalization"
+          ]
+        },
+        "displayOrder": 2,
+        "translationKey": "SUMMARY_TITLE_HOSPITAL_DISCHARGE_INFO"
+      },
       "casedefinition": {
         "isObservation": true,
         "displayType": "Full-Page",
