@@ -586,7 +586,7 @@
       "MTC, Month and year of treatment period" : {
         "required" : true,
         "minYear": 2000,
-        "maxYear": 2020,
+        "maxYear": 2030,
         "allowFutureDates": true,
         "displayMonthAndYear": true
       },
